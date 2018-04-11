@@ -44,3 +44,7 @@ body,
 .wrap ul li.active {
     color: red;
 }
+
+.wrap ul li span.acc {
+    color: red;
+}
