@@ -6,21 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="wrap">
         <ul>
-            <li> 有心渡魔 无心泗人 </li>
-            <li> 有心渡魔 无心泗人 </li>
-            <li> 有心渡魔 无心泗人 </li>
-            <li> 有心渡魔 无心泗人 </li>
-            <li> 有心渡魔 无心泗人 </li>
-            <li> 有心渡魔 无心泗人 </li>
-            <li> 有心渡魔 无心泗人 </li>
-            <li> 有心渡魔 无心泗人 </li>
+            <li class="li">
+                <p> <i class="icon iconfont icon-guide"></i></p>
+                <span>电源</span>
+            </li>
+            <li class="li">
+                <p> <i class="icon iconfont icon-wentidan"></i></p>
+                <span>首页</span>
+            </li>
+            <li class="li">
+                <p> <i class="icon iconfont icon-ziliaoku"></i></p>
+                <span>菜单</span>
+            </li>
+            <li class="li">
+                <p> <i class="icon iconfont icon-guanzhu"></i></p>
+                <span>截屏</span>
+            </li>
         </ul>
     </div>
 </body>
+<script src="./jquery.js"></script>
+<script>
+    $('.li').on('click', function() {
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+</script>
 
 </html>
